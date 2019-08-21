@@ -8,14 +8,30 @@
     <script src="https://kit.fontawesome.com/43f3cc2ec8.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <meta name="description" content="Portafolio personal sobre fullstack de Arturo Dávila">
+    <meta name="author" content="Arturo Dávila" />
+    <meta name="keywords" content="frontend, developer, design, fullstack, mentor, teacher" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="ArturoDávila" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jarturo1.github.io/project2/." />
+    <meta property="og:title" content="Mi portafolio - Arturo Dávila" />
+    <meta property="og:description" content="Portafolio personal sobre fullstack de Arturo Dávila" />
+    <meta property="og:image" content="https://picsum.photos/216/216" />
 </head>
 
 <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v4.0"></script>
+        <div class="fb-share-button" data-href="https://jarturo1.github.io/project2/." data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjarturo1.github.io%2Fproject2&amp;
+        src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
     <div>
         <!--HEADER-->
         <header>
             <div class="container">
-                <h1 class="logo"><a>&lt;Arturo Dávila/&gt;</a></h1>
+                <h1 class="logo"><a>&lt;Arturo Dávila&gt;</a></h1>
                 <div>
                    <ul>
                         <li><a href="#about-me">Sobre mi</a></li>
@@ -36,7 +52,7 @@
                     <h2>Sobre MI</h2>
                     <div class="text">
                         <figure>
-                            <img src="https://picsum.photos/216/216" alt="arturo davila">
+                            <img src=https://picsum.photos/285/180. alt="arturo davila">
                         </figure>
                         <div>
                             <p>
@@ -74,7 +90,7 @@
                     <div class="articles">
                         <article>
                             <figure>
-                                <img src="https://picsum.photos/285/180" alt="pic 1">
+                                <img src="https://picsum.photos/200/300" alt="pic 1">
                             </figure>
                             <div class="text">
                                 <div>
@@ -316,23 +332,23 @@
                         <form class="wrap-form">
                             <div>
                                 <label for="name">Nombre</label>
-                                <input id="name" type="text">
+                                <input id="name" type="text" placeholder="Ingresa tu Nombre" required>
                             </div>
                             <div>
                                 <label for="lastname">Apellido</label>
-                                <input id="lastname" type="text">
+                                <input id="lastname" type="text" placeholder="Ingresa tu Apellido" required>
                             </div>
                             <div>
                                 <label for="number">Numero de contacto</label>
-                                <input id="number" type="text">
+                                <input id="number" type="number" placeholder="Ingresa tu número" required>
                             </div>
                             <div>
                                 <label for="email">Correo</label>
-                                <input id="email" type="text">
+                                <input id="email" type="email" placeholder="Ingresa tu Email" required>
                             </div>
                             <div class="w100">
                                 <label for="message">Dejame un mensaje</label>
-                                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                                <textarea name="" id="message" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
                             </div>
                             <div>
                                 <button type="submit">Enviar</button>
